@@ -17,7 +17,7 @@
             </div>
             <div class="navigation">
                 <div class="user">
-                    <img src="./img/avatar.svg" alt="User's avatar" class="user-avatar">
+                    <img src="./img/avatar.jpg" alt="User's avatar" class="user-avatar">
                     <span class="user-name">Andrew</span>
                 </div>
                 <nav class="nav-panel">
@@ -36,6 +36,7 @@
                         </svg>
                     </a>
                     <a href="#" class="icon-link">
+                        <span class="notification">8</span>
                         <svg class="header-icon">
                             <use xlink:href="./img/icons.svg#bell"></use>
                         </svg>
@@ -52,7 +53,7 @@
     <div class="container">
         <div class="menu-sidebar">
             <div class="user">
-                <img src="./img/avatar.svg" alt="User's avatar" class="user-avatar">
+                <img src="./img/avatar.jpg" alt="User's avatar" class="user-avatar">
                 <span class="user-name">Andrew Stepanets</span>
             </div>
             <!-- / .user -->
@@ -144,7 +145,7 @@
                     <h4 class="create-post-title">Create post</h4>
                 </div>
                 <div class="create-post-body">
-                    <img src="./img/avatar.svg" alt="user avatar" class="user-avatar">
+                    <img src="./img/avatar.jpg" alt="user avatar" class="user-avatar">
                     <div class="create-post-input" contenteditable="true">What's on your mind, Andrew?</div>
                 </div>
                 <div class="create-post-footer">
@@ -171,7 +172,66 @@
                     </button>
 
                 </div>
+                <!-- / footer -->
             </div>
+            <div class="post">
+                <div class="post-header">
+                    <div class="user">
+                        <img src="./img/avatar.jpg" alt="avatar" class="user-avatar">
+                        <div class="post-info">
+                            <a href="#" class="post-author">
+                                Andrew Stepanets
+                            </a>
+                            <div class="post-time-info">
+                                <span class="post-time">3hr</span>
+                                <svg class="settings-icon">
+                                    <use xlink:href="./img/icons.svg#settings"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="post-header-button">
+                        <svg class="post-button-icon">
+                            <use xlink:href="./img/icons.svg#dots"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="post-content">
+                    <p class="post-text">
+                        Did you know that all of this was made using only components and styles from Ant Desing System
+                        for Figma?
+                        Learn more: <a href="#">https://antforfigma.com</a>
+                    </p>
+                    <img src="./img/post-img.jpg" alt="Post image" class="post-img">
+                </div>
+                <div class="likes">
+                    <svg class="likes-icon">
+                        <use xlink:href="./img/icons.svg#active-like"></use>
+                    </svg>
+                    <span class="likes-counter">23</span>
+                </div>
+                <div class="post-footer">
+                    <button class="post-button">
+                        <svg class="post-button-icon">
+                            <use xlink:href="./img/icons.svg#like"></use>
+                        </svg>
+                        <span class="post-button-text">Like</span>
+                    </button>
+                    <button class="post-button">
+                        <svg class="post-button-icon">
+                            <use xlink:href="./img/icons.svg#chat"></use>
+                        </svg>
+                        <span class="post-button-text">Comment</span>
+                    </button>
+                    <button class="post-button">
+                        <svg class="post-button-icon">
+                            <use xlink:href="./img/icons.svg#share"></use>
+                        </svg>
+                        <span class="post-button-text">Share</span>
+                    </button>
+                </div>
+            </div>
+            <!-- /.post -->
         </div>
         <!-- /.main-feed -->
     </div>
