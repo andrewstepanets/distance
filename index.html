@@ -12,6 +12,11 @@
 <body>
     <header class="header">
         <div class="header-block">
+            <button class="burger-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
             <div class="search">
                 <input type="text" class="search-input" placeholder="Search">
             </div>
@@ -234,8 +239,65 @@
             <!-- /.post -->
         </div>
         <!-- /.main-feed -->
+        <div class="right-sidebar">
+            <div class="stories">
+                <div class="stories-header">
+                    <h4 class="stories-title">Stories</h4>
+                    <div class="story-buttons">
+                        <a href="#" class="story-button-link">
+                            <svg class="stories-icon">
+                                <use xlink:href="./img/icons.svg#clock-circle"></use>
+                            </svg>
+                            <span class="story-button-text">Archive</span>
+                        </a>
+                        <a href="#" class="story-button-link">
+                            <span class="story-button-text">Settings</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- /. story-header -->
+                <a href="#" class="story-item-add">
+                    <div class="story-img">
+                        +
+                    </div>
+                    <div class="story-item-text">
+                        <span class="story-title">Add to your story</span>
+                        <span class="story-text">Share a photo or video or write something</span>
+                    </div>
+                </a>
+                <!-- /.story-item-add -->
+                <a href="#" class="story-item">
+                    <div class="story-img figma">
+                    </div>
+                    <div class="story-item-text">
+                        <span class="story-title">Figma</span>
+                        <span class="story-text">4 hours ago</span>
+                    </div>
+                </a> <!-- /.story-item -->
+                <a href="#" class="story-item">
+                    <div class="story-img figma">
+                    </div>
+                    <div class="story-item-text">
+                        <span class="story-title">Figma</span>
+                        <span class="story-text">4 hours ago</span>
+                    </div>
+                </a> <!-- /.story-item -->
+            </div>
+        </div>
+        <!-- /.right-sidebar -->
     </div>
 
+    <script>
+        const menuBtn = document.querySelector('.burger-menu');
+        const menuSidebar = document.querySelector('.menu-sidebar');
+
+        function toggleMenu() {
+            menuSidebar.classList.toggle('active');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+
+    </script>
 </body>
 
 </html>
